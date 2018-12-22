@@ -1,4 +1,0 @@
-1			// 0 - не зарегистрирован / 1 - зарегистрирован / 2 - гм / 3 - админка.
-Login: Emeyshen
-Password: pass123
-Nickname: Emeyshen
