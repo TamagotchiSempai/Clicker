@@ -37,7 +37,7 @@ void Registration::record(string Login, string Password, string Nickname)
 	{
 		accountCreate = true;
 		//Player << Login << ":" << Password << endl;
-		Player << accountCreate << "\t\t\t// 0 - íå çàðåãèñòðèðîâàí / 1 - çàðåãèñòðèðîâàí / 2 - ãì / 3 - àäìèíêà.\nLogin: " << Login << "\nPassword: " << Password << "\nNickname: " << Nickname << endl;
+		Player << accountCreate << "\t\t\t// 0 - Ð½Ðµ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½ / 1 - Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½ / 2 - Ð³Ð¼ / 3 - Ð°Ð´Ð¼Ð¸Ð½ÐºÐ°.\nLogin: " << Login << "\nPassword: " << Password << "\nNickname: " << Nickname << endl;
 	}
 
 	Player.close();
@@ -62,7 +62,7 @@ void Registration::chek()
 	else
 
 	{
-		cout << "Àêêàóíò íå çàðåãèñòðèðîâàí. Õîòèòå åãî ñîçäàòü? (y/n) ";
+		cout << "ÐÐºÐºÐ°ÑƒÐ½Ñ‚ Ð½Ðµ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½. Ð¥Ð¾Ñ‚Ð¸Ñ‚Ðµ ÐµÐ³Ð¾ ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ? (y/n) ";
 		selectt:
 		
 		cin >> select;
@@ -79,11 +79,11 @@ void Registration::chek()
 		case 'n':
 		case 'N':
 		{
-			cout << "Áåç àêêàóíòà íåò âîçìîæíîñòè ïðîäîëæàòü èãðó.";
+			cout << "Ð‘ÐµÐ· Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð° Ð½ÐµÑ‚ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð°Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ.";
 			break;
 		}
 		default:
-			cout << "Íå ïðàâèëüíûé ñèìâîë. Ââåäèòå çàíîâî: ";
+			cout << "ÐÐµ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð». Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð°Ð½Ð¾Ð²Ð¾: ";
 			goto selectt;
 			break;
 		}
@@ -156,13 +156,13 @@ void Registration::load()
 			{
 				accountCreate = 1;
 				status = 5;
-				cout << "Âàø àêêàóíò çàáëîêèðîâàí.";
+				cout << "Ð’Ð°Ñˆ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚ Ð·Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½.";
 				break;
 			}
 			default:
 				accountCreate = 1;
 				status = 404;
-				cout << "Îøèáêà";
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ°";
 				break;
 			}
 		}
